@@ -1,0 +1,15 @@
+{
+	"name": "open-webui",
+	"url": "ghcr.io/open-webui/open-webui:main",
+	"package_url": "https://github.com/open-webui/open-webui",
+	"license": "BSD-3-Clause",
+	"description": "Open WebUI chat frontend for the Pantavisor AI Box: self-hosted OpenAI-compatible chat with built-in model manager.",
+	"arch": ["arm64v8"],
+	"src_extra": {
+		"args": {
+			"PV_GROUP": "app",
+			"PV_STATUS_GOAL": "READY",
+			"PV_RESTART_POLICY": "container"
+		}
+	}
+}
