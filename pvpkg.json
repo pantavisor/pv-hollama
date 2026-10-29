@@ -1,9 +1,9 @@
 {
-	"name": "open-webui",
-	"url": "ghcr.io/open-webui/open-webui:main",
-	"package_url": "https://github.com/open-webui/open-webui",
-	"license": "BSD-3-Clause",
-	"description": "Open WebUI chat frontend for the Pantavisor AI Box: self-hosted OpenAI-compatible chat with built-in model manager.",
+	"name": "hollama",
+	"url": "ghcr.io/fmaclen/hollama:latest",
+	"package_url": "https://github.com/fmaclen/hollama",
+	"license": "MIT",
+	"description": "Hollama: minimal LLM chat for the Pantavisor AI Box, with Ollama model manager and OpenAI-compatible servers.",
 	"arch": ["arm64v8"],
 	"src_extra": {
 		"args": {

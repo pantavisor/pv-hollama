@@ -1,16 +1,17 @@
-# pv-open-webui
+# pv-hollama
 
-Open WebUI chat frontend for Pantavisor AI boxes, packaged as a Pantavisor
+Hollama chat frontend for Pantavisor AI boxes, packaged as a Pantavisor
 app container.
 
-- Serves its chat on the device's own port 8080 (host-network apps).
-- Talks to the inference engine of the device over OpenAI's API, at
-  `OPENAI_API_BASE_URL` (the pv-ollama container, port 11434).
-- Its own chat/document/index state lives in the container's persistent
-  volume (`docker--var-app-backend-data`).
+- Minimal LLM chat UI (~58MB image): multi-server chat, sessions, model
+  manager that pulls Ollama models directly from the UI.
+- Serves on the device's own port 4173 (host-network apps).
+- Point it at the device engine in Settings: the pv-ollama container at
+  `http://localhost:11434` (their UI lists `ollama` by default). Model
+  pulls land in pv-ollama's persistent model store.
 
 Build apps for the device with the stage builder, e.g.:
 
 	pvr build start --project nano-ai-box --platform linux/arm64 \
-	  --git-url https://gitlab.com/pantacor/pv-open-webui --git-ref main \
-	  --app open-webui
+	  --git-url https://github.com/pantavisor/pv-hollama --git-ref main \
+	  --app hollama
