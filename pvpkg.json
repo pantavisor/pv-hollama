@@ -4,11 +4,13 @@
 	"package_url": "https://github.com/fmaclen/hollama",
 	"license": "MIT",
 	"description": "Hollama: minimal LLM chat for the Pantavisor AI Box, with Ollama model manager and OpenAI-compatible servers.",
-	"arch": ["arm64v8"],
+	"arch": [
+		"arm64v8"
+	],
 	"src_extra": {
 		"args": {
 			"PV_GROUP": "app",
-			"PV_STATUS_GOAL": "READY",
+			"PV_STATUS_GOAL": "STARTED",
 			"PV_RESTART_POLICY": "container"
 		}
 	}
